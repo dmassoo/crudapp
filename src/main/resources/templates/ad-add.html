@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Add Ad</title>
+</head>
+<body>
+    <form action="#" th:action="@{/ad-add}" th:object="${ad}" method="post">
+        <label for="text">Ad Text</label>
+        <input type="text" th:field="*{adText}" id="text" placeholder="Ad Text">
+        <label for="name">Name</label>
+        <input type="text" th:field="*{name}" id="name" placeholder="Name">
+        <label for="email">Email</label>
+        <input type="text" th:field="*{email}" id="email" placeholder="Email">
+        <input type="submit" value="Add Ad">
+    </form>
+</body>
+</html>
